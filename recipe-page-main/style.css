@@ -103,3 +103,32 @@ table {
 tr {
   border-bottom: 1px solid #e7e7e7;
 }
+
+@media (max-width: 560px) {
+  article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, header p, section {
+    padding: 0 10%;
+  }
+  
+  .info {
+    margin: 5% 10%;
+  }
+
+  tr .title {
+    padding-left: 10%;
+  }
+
+  tr .value {
+    color: #864a3a;
+    font-weight: 700;
+  }
+
+  .attribution {
+    padding: 10%;
+  }
+}

@@ -6,47 +6,53 @@
 @font-face {
   font-family: YoungSerif;
   src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+  font-weight: 400;
 }
 
 * {
   margin: 0px;
   padding: 0px;
   font-family: Outfit;
-  color: #5a504f;
+  color: hsl(30, 10%, 34%);
 }
 
 body {
-  background-color: #f3e5d8;
+  background-color: hsl(30, 54%, 90%);
 }
 
 h1 {
   font-family: YoungSerif;
   font-size: 2.5rem;
   margin: 1rem 0;
-  color: #2d2c2a;
+  color: hsl(24, 5%, 18%);
 }
 
 h2 {
   font-family: YoungSerif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #864a3a;
+  color: hsl(14, 45%, 36%);
 }
 
 h3 {
-  color: #874c68;
+  color: hsl(332, 51%, 32%);
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 hr {
-  background-color: #e7e7e7;
+  background-color: hsl(30, 18%, 87%);
   height: 1px;
   margin: 1.5rem 0;
   border: 0;
 }
 
+strong {
+  font-weight: 700;
+}
+
 article {
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   width: 50%;
   margin: 5% auto;
   padding: 3%;
@@ -74,7 +80,7 @@ li {
 
 li::marker {
   font-size: 0.75rem;
-  color: #864a3a;
+  color: hsl(14, 45%, 36%);
 }
 
 .info {
@@ -85,7 +91,7 @@ li::marker {
 }
 
 .info li::marker {
-  color: #874c68;
+  color: hsl(332, 51%, 32%);
 }
 
 .instruction li::marker {
@@ -104,6 +110,10 @@ tr {
   border-bottom: 1px solid #e7e7e7;
 }
 
+.attribution {
+  margin-top: 10%;
+  text-align: center;
+}
 @media (max-width: 560px) {
   article {
     width: 100%;
@@ -124,11 +134,11 @@ tr {
   }
 
   tr .value {
-    color: #864a3a;
+    color: hsl(14, 45%, 36%);
     font-weight: 700;
   }
 
   .attribution {
-    padding: 10%;
+    padding-bottom: 5%;
   }
 }

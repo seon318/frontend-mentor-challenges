@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Inter400;
+  src: url('assets/fonts/static/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: Inter600;
+  src: url('assets/fonts/static/Inter-SemiBold.ttf');
+}
+@font-face {
+  font-family: Inter700;
+  src: url('assets/fonts/static/Inter-Bold.ttf');
+}
+:root {
+  --primary: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --black: hsl(0, 0%, 8%);
+}
+body {
+  background-color: var(--black);
+  font-family: Inter400;
+  font-size: 14px;
+  color: white;
+}
+
+section {
+  text-align: center;
+  width: 300px;
+  height: 520px;
+  margin: 15vh auto;
+  background-color: var(--dark-grey);
+  border-radius: 20px;
+  padding: 40px;
+}
+section img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-family: Inter700;
+  font-size: 24px;
+}
+h2 {
+  font-family: Inter600;
+  font-size: 14px;
+  color: var(--primary);
+  margin-top: -10px;
+}
+p {
+  margin: 30px 0;
+  font-size: 14px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+}
+button {
+  height: 40px;
+  border-radius: 5px;
+  font-family: Inter600;
+  background-color: var(--grey);
+  color: white;
+  border: 0;
+  outline: 0;
+  
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--dark-grey)
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

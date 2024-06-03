@@ -1,0 +1,113 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --pink: hsl(275, 100%, 97%);
+  --purple: hsl(292, 16%, 49%);
+  --darkpurple: hsl(292, 42%, 14%);
+}
+@font-face {
+  font-family: WorkSans400;
+  src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+@font-face {
+  font-family: WorkSans600;
+  src: url(assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: WorkSans700;
+  src: url(assets/fonts/static/WorkSans-Bold.ttf);
+}
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background: url(assets/images/background-pattern-desktop.svg) repeat-x
+    var(--pink);
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: WorkSans400;
+  }
+}
+article {
+  background-color: var(--white);
+  border-radius: 1rem;
+  width: 50vw;
+  padding: 2rem;
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    .header-title {
+      font-family: WorkSans700;
+      font-size: 3rem;
+      color: var(--darkpurple);
+    }
+    .header-icon {
+      width: 3rem;
+      height: 3rem;
+      background: url(assets/images/icon-star.svg);
+      background-size: cover;
+      margin-right: 1rem;
+    }
+  }
+  section {
+    .toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        width: 100%;
+        font-family: WorkSans600;
+        font-size: 1.2rem;
+        color: var(--darkpurple);
+      }
+      .toggle-btn {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        background-size: cover;
+        &.plus {
+          background-image: url(assets/images/icon-plus.svg);
+        }
+        &.minus {
+          background-image: url(assets/images/icon-minus.svg);
+        }
+      }
+    }
+    .content {
+      color: var(--purple);
+      margin-top: 1.5rem;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  hr {
+    background-color: var(--pink);
+    height: 1px;
+    border: 0;
+    margin: 1.5rem 0;
+  }
+}
+@media (max-width: 560px) {
+  :root {
+    font-size: 80%;
+  }
+  body {
+    background: url(assets/images/background-pattern-mobile.svg) repeat-x
+      var(--pink);
+
+    article {
+      width: 70vw;
+      header {
+        .header-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        .header-title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

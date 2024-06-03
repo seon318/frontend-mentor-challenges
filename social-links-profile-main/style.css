@@ -18,17 +18,18 @@
   --black: hsl(0, 0%, 8%);
 }
 body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
   background-color: var(--black);
   font-family: Inter400;
   font-size: 14px;
   color: white;
 }
-
 section {
   text-align: center;
   width: 300px;
   height: 520px;
-  margin: 15vh auto;
   background-color: var(--dark-grey);
   border-radius: 20px;
   padding: 40px;

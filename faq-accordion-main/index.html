@@ -72,5 +72,20 @@
         </p>
       </section>
     </article>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+        toggleButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const section = button.closest('section');
+            const content = section.querySelector('.content');
+            content.classList.toggle('hidden');
+            button.classList.toggle('plus');
+            button.classList.toggle('minus');
+          });
+        });
+      });
+    </script>
   </body>
 </html>

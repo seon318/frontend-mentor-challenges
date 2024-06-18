@@ -1,0 +1,87 @@
+:root {
+  --red: hsl(0, 100%, 67%);
+  --orange: hsl(0, 100%, 67%);
+  --green: hsl(166, 100%, 37%);
+  --blue: hsl(234, 85%, 45%);
+  --white: hsl(0, 0%, 100%);
+  --paleblue: hsl(221, 100%, 96%);
+  --lavender: hsl(241, 100%, 89%);
+  --darkgray: hsl(224, 30%, 27%);
+  --gradbg1: hsl(252, 100%, 67%);
+  --gradbg2: hsl(241, 81%, 54%);
+  --gradcir1: hsla(256, 72%, 46%, 1);
+  --gradcir2: hsla(241, 72%, 46%, 0);
+}
+
+@font-face {
+  font-family: Hanken;
+  src: url("https://fonts.google.com/specimen/Hanken+Grotesk");
+  font-weight: 500;
+}
+html {
+  font-size: 18px;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+html * {
+  font-family: Hanken;
+  margin: 0;
+  padding: 0;
+}
+
+.result {
+  display: flex;
+  width: 40rem;
+  height: 28rem;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+.result .score {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 28rem;
+  background: linear-gradient(var(--gradbg1), var(--gradbg2));
+}
+.result .score .score-title {
+  color: var(--lavender);
+  font-size: 1.2rem;
+}
+.result .score .score-circle {
+  display: flex;
+  margin: 2rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--gradcir1), var(--gradcir2));
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+}
+.result .score .score-circle .score-value {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 800;
+}
+.result .score .score-circle .score-total {
+  color: var(--lavender);
+}
+.result .score .score-text {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.result .score .score-description {
+  width: 13rem;
+  font-size: 18px;
+  text-align: center;
+  color: var(--lavender);
+}
+.result .summary {
+  width: 300px;
+  height: 400px;
+}

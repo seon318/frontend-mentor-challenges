@@ -9,7 +9,8 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Results summary component</title>
   </head>
   <body>
@@ -21,14 +22,29 @@
           <p class="score-total">of 100</p>
         </span>
         <h2 class="score-text">Great</h2>
-        <p class="score-description">You scored higher than 65% of the people who have taken these tests.</p>
+        <p class="score-description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
       </section>
       <section class="summary">
-        <span class="summary-box"><h3>Reaction</h3><p><strong>80</strong> / 100</p></span>
-        <span class="summary-box"><h3>Memory</h3><p><strong>92</strong> / 100</p></span>
-        <span class="summary-box"><h3>ReVerbalaction</h3><p><strong>61</strong> / 100</p></span>
-        <span class="summary-box"><h3>Visual</h3><p><strong>72</strong> / 100</p></span>
-        <button>Continue</button>
+        <h1 class="summary-title">Summary</h1>
+        <span class="summary-box reaction"
+          ><h3>Reaction</h3>
+          <p><strong>80</strong> / 100</p></span
+        >
+        <span class="summary-box memory"
+          ><h3>Memory</h3>
+          <p><strong>92</strong> / 100</p></span
+        >
+        <span class="summary-box verbal"
+          ><h3>Verbal</h3>
+          <p><strong>61</strong> / 100</p></span
+        >
+        <span class="summary-box visual"
+          ><h3>Visual</h3>
+          <p><strong>72</strong> / 100</p></span
+        >
+        <button class="summary-btn">Continue</button>
       </section>
     </section>
   </body>
